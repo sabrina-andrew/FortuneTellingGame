@@ -7,26 +7,37 @@ namespace FortuneTellerGame
         static void Main(string[] args)
         {
             Console.WriteLine("What is your first name?");
-            Console.ReadLine();
+            string firstName = Console.ReadLine();
             Console.WriteLine("What is your last name?");
-            Console.ReadLine();
+            string lastName = Console.ReadLine();
             Console.WriteLine("How old are you?");
-            Console.ReadLine();
-            int userInput;
-            userInput = Console.Read();
-            Console.WriteLine("What is your birth month?", userInput);
-            string ROYGBIV = Console.ReadLine();
-            Console.WriteLine("Enter the word help to get a list of ROYGBIV");
-            Console.ReadLine();
-            Console.WriteLine(" The ROYGBIV colors are red, orange, yellow, green, blue, indigo, violet.");
+            int age = Convert.ToInt32(Console.ReadLine());   
+            Console.WriteLine("What is your birth month?");
+            int birthMonth = Convert.ToInt32(Console.ReadLine());
+                        
             Console.WriteLine("Which is your favorite Color?");
-           if (ROYGBIV =
-            {
-              
-            }
-            
+            Console.WriteLine("Enter the word Help to get a list of ROYGBIV");
+            string roygbiv = Console.ReadLine();
 
-                
+            if (roygbiv.Equals("Help"))
+            {
+                Console.WriteLine(" The ROYGBIV colors are red, orange, yellow, green, blue, indigo, violet.");
+                Console.WriteLine("Which is your favorite Color?");
+                string roygbiv = Console.ReadLine()
+            }
+
+            // Fizz Buzz math for even or odd
+
+            ///Do switch statement for colors to cars  colors should be in quotes
+
+            //switch statement or if statement for town
+
+            //if statement for birth month
+
+
+
+
+
         }
     }
 }
