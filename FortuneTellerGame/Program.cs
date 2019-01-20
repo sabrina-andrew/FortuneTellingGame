@@ -8,27 +8,31 @@ namespace FortuneTellerGame
         {
             Console.WriteLine("What is your first name?");
             string firstName = Console.ReadLine();
+            
             Console.WriteLine("What is your last name?");
             string lastName = Console.ReadLine();
+            
 
             // Fizz Buzz math for even or odd
             Console.WriteLine("How old are you?");
             int age = Convert.ToInt32(Console.ReadLine());
 
-            int retirement = age % 2;
-
-            if (age == 0)
+            int evenOrOdd = age % 2;
+            string retirement;
+            if (evenOrOdd == 0)
             {
-                Console.WriteLine("12 years");
+                retirement = "12 years";
             }
             else
             {
-                Console.WriteLine("14 years");
+                retirement = "14 years";
             }
-            
-            
+
+
             Console.WriteLine("What is the number of your birth month?");
             int birthMonth = Convert.ToInt32(Console.ReadLine());
+
+            
 
             //if statement for birth month
 
@@ -37,12 +41,12 @@ namespace FortuneTellerGame
                 Console.WriteLine("$256,000.76");
             }
             else if (birthMonth >= 5 && birthMonth <= 9)
-            
+
             {
                 Console.WriteLine("$3,687,105.42");
             }
             else if (birthMonth >= 9 && birthMonth <= 13)
-            
+
             {
                 Console.WriteLine("$86.23");
             }
@@ -50,7 +54,7 @@ namespace FortuneTellerGame
             {
                 Console.WriteLine("0.00");
             }
-                            
+
             Console.WriteLine("Which is your favorite Color?");
             Console.WriteLine("Enter the word Help to get a list of ROYGBIV");
             string roygbiv = Console.ReadLine();
@@ -61,6 +65,9 @@ namespace FortuneTellerGame
                 Console.WriteLine("Which is your favorite Color?");
                 roygbiv = Console.ReadLine();
             }
+
+            string modeOfTransportation = roygbiv;
+
 
             ///Do switch statement for colors to cars  colors should be in quotes
 
@@ -92,6 +99,8 @@ namespace FortuneTellerGame
             Console.WriteLine("How many siblings do you have?");
             int numberOfSiblings = Convert.ToInt32(Console.ReadLine());
 
+            int vacationHome = numberOfSiblings;
+
             //switch statement or if statement for town
 
             if (numberOfSiblings.Equals("0"))
@@ -119,20 +128,9 @@ namespace FortuneTellerGame
                 Console.WriteLine("Burnt Porcupine, Maine");
             }
 
-            string str = firstName + lastName + " will retire in" + retirement + " years with" + birthMonth + " in the bank, " + " a vacation home in" + numberOfSiblings + " and travel by" + roygbiv.";
+            string str = firstName + lastName + " will retire in" + retirement + " years with" + birthMonth + " in the bank, " + " a vacation home in" + vacationHome + " and travel by" + roygbiv + ".";
 
-            System.Console.WriteLine(str);
-
-
-
-
-
-
-
-
-
-
-
+            Console.WriteLine(str);
 
         }
     }
