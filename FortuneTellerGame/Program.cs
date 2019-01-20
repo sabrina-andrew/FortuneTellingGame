@@ -93,6 +93,9 @@ namespace FortuneTellerGame
                 case "violet":
                     modeOfTransportation = "dog sled";
                     break;
+                default:
+                    modeOfTransportation = "steam engine";
+                    break;
             }
 
             Console.WriteLine("How many siblings do you have?");
@@ -127,10 +130,11 @@ namespace FortuneTellerGame
                 vacationHome = "Burnt Porcupine, Maine";
             }
 
-            string str = firstName + lastName + " will retire in " + retirement + " years with " + moneyInBank + " in the bank, " + " a vacation home in " + vacationHome + " and travel by" + modeOfTransportation + ".";
+            string str = firstName + " " + lastName + " will retire in " + retirement + " years with " + moneyInBank + " in the bank, " + " a vacation home in " + vacationHome + " and travel by " + modeOfTransportation + ".";
 
             Console.WriteLine(str);
 
         }
+
     }
 }
