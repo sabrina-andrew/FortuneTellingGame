@@ -54,17 +54,17 @@ namespace FortuneTellerGame
                 moneyInBank = "0.00";
             }
 
-            Console.WriteLine("Which is your favorite Color?");
-            Console.WriteLine("Enter the word Help to get a list of ROYGBIV");
-            string roygbiv = Console.ReadLine();
+            
+            Console.WriteLine("Enter the word help to get a list of ROYGBIV");
+                       string roygbiv = Console.ReadLine();
 
-            if (roygbiv.Equals("Help"))
-            {
-                Console.WriteLine(" The ROYGBIV colors are red, orange, yellow, green, blue, indigo, violet.");
-                Console.WriteLine("Which is your favorite Color?");
+            if (roygbiv.Equals("help"))
+                            {
+                Console.WriteLine(" The ROYGBIV colors are red, orange, yellow, green, blue, indigo, violet. Which is your favorite?"); 
+               
                 roygbiv = Console.ReadLine();
             }
-
+         
             string modeOfTransportation;
 
 
